@@ -1,5 +1,3 @@
-#import os, sys
-
 from os import rename, listdir
 
 lista = listdir()
@@ -37,9 +35,9 @@ def re_allStartEnd():
 			dst = addition + file
 			rename(file, dst)
 		if startorend == "e":
-			dot = file.rfind(".") #saving file's extensions
+			dot = file.rfind(".")
 			getext = slice((dot + 1), len(file))
 			fileext = "." + (file[getext])
-			filenoext = file.replace(fileext, "") #removing the extension from filename so it won't double
+			filenoext = file.replace(fileext, "")
 			dst = filenoext + addition + fileext
 			rename(file, dst)
