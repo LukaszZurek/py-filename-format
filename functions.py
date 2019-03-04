@@ -13,10 +13,10 @@ def re_allNum():
 	i = 0
 	for file in lista:
 		i += 1
-		if file == "filenamedraft.py" or file == "__pycache__" or file == "functions.py": #a code that prevents the script from changing *.py filename
+		if file == "filenamedraft.py" or file == "__pycache__" or file == "functions.py":
 			i -= 1
 			continue
-		dot = file.rfind(".") #saving file's extensions
+		dot = file.rfind(".")
 		getext = slice((dot + 1), len(file))
 		fileext = "." + (file[getext])
 		dst = filename + str(i) + fileext

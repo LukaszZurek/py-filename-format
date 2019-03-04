@@ -1,12 +1,10 @@
-""" 19-02-2019 - dev start """
-
 print("*** FILE RENAMER by Łukasz Żurek (2019) ***")
 
 import functions
 
 index = 0
 
-print("LIST OF FILES IN THE PROGRAM DIRECTORY (in short - PD):\n")
+print("LIST OF FILES IN THE PROGRAM'S DIRECTORY (in short - PD):\n")
 
 for i in functions.lista:
 	if i == "filenamedraft.py" or i == "__pycache__" or i == "functions.py":
