@@ -7,7 +7,7 @@ index = 0
 print("LIST OF FILES IN THE PROGRAM'S FOLDER (in short - PF):\n")
 
 for i in functions.lista:
-	if i == "filenamedraft.py" or i == "__pycache__" or i == "functions.py":
+	if i == "filenamedraft.py" or i == "__pycache__" or i == "functions.py" or i == "README.md":
 		continue
 	index += 1
 	print(str(index) + ") " + i)
